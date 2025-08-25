@@ -11,38 +11,37 @@
 <!-- Navbar start -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class=" navbar-brand" href="#"><img src="/IMG/images.png" alt="Logo" width="35" height="35" class="d-inline-block me-2">IGASAR</a>
+    <a class="navbar-brand" href="#"><img src="/IMG/images.png" alt="Logo" width="35" height="35" class="d-inline-block me-2">IGASAR</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto fw-bold">
         <li class="nav-item ">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="/Home.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profil</a>
+          <a class="nav-link" href="/profil.html">Profil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jurusan</a>
+          <a class="nav-link" href="/Jurusan.html">Jurusan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Galeri</a>
+          <a class="nav-link" href="/galeri.html">Galeri</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Event</a>
+          <a class="nav-link" href="/event.html">Event</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Prestasi</a>
+          <a class="nav-link" href="/prestasi.html">Prestasi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Eskul</a>
+          <a class="nav-link" href="/Eskul.html">Eskul</a>
         </li>
       </ul>
-       <form class="d-flex ms-5 " role="search" style="width: 300px;">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-     
-    </form>
+      <form class="d-flex ms-lg-5" role="search" style="width: 300px;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      </form>
     </div>
   </div>
 </nav>
@@ -51,8 +50,8 @@
 
 <!-- Content -->
 <div class="card text-bg-dark">
-  <img src="/IMG/Book.jpg" class="card-img opacity-50 " alt="#" style="width: 1200px;height: 150px;">
-  <div class="card-img-overlay text-center">
+  <img src="/IMG/Book.jpg" class="card-img img-fluid w-100 opacity-50" alt="#" style="height: 150px; object-fit: cover;">
+  <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center">
     <h4 class="card-title">Program Keahlian</h4>
     <p class="card-text">SMK IGASAR PINDAD BANDUNG</p>
   </div>
@@ -71,8 +70,124 @@
 
 <div class="border-top border-4 border-success my-3 "></div>
 
+ <style>
+    .img-box {
+      border: 5px solid;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .divider {
+      border-top: 2px solid #a00; 
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body >
 
-<!-- ...existing code... -->
+  <div class="container">
+
+    <!-- Baris 1 -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-box border-success">
+          <img src="/IMG/Untitled.jpg" class="img-fluid" alt="Gambar Jurusan">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5 class="text-center fw-bold">TEKNIK PERMESINAN</h5>
+        <p>
+          Jurusan Teknik Mesin membekali siswa dengan pengetahuan tentang permesinan, manufaktur, serta peralatan 
+          produksi. Siswa akan belajar mengoperasikan peralatan industri, termasuk mesin modern seperti CNC, sehingga 
+          siap bekerja di dunia industri maupun melanjutkan ke perguruan tinggi.
+        </p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Baris 2 -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 order-md-2 text-center">
+        <div class="img-box border-danger">
+          <img src="/IMG/Untitled.jpg" class="img-fluid" alt="Gambar Jurusan">
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <h5 class="text-center fw-bold">TEKNIK KENDARAAN RINGAN OTOMOTIF</h5>
+        <p>
+          Jurusan TKR membekali siswa dengan kompetensi dalam perawatan, perbaikan, dan otomotif kendaraan ringan 
+          (mobil). Siswa belajar sistem mekanis, kelistrikan, suspensi, dan chasis, hingga sistem injeksi modern. 
+          Lulusan TKR siap bekerja di bengkel resmi, dealer otomotif, industri kendaraan, maupun membuka usaha mandiri 
+          di bidang perbengkelan.
+        </p>
+      </div>
+    </div>
+<div class="divider"></div>
+<!-- Baris 3 -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-center">
+        <div class="img-box border-success">
+          <img src="/IMG/Untitled.jpg" class="img-fluid" alt="Gambar Jurusan">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5 class="text-center fw-bold">TEKNIK PERMESINAN</h5>
+        <p>
+          Jurusan Teknik Mesin membekali siswa dengan pengetahuan tentang permesinan, manufaktur, serta peralatan 
+          produksi. Siswa akan belajar mengoperasikan peralatan industri, termasuk mesin modern seperti CNC, sehingga 
+          siap bekerja di dunia industri maupun melanjutkan ke perguruan tinggi.
+        </p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Baris 4 -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 order-md-2 text-center">
+        <div class="img-box border-danger">
+          <img src="/IMG/Untitled.jpg" class="img-fluid" alt="Gambar Jurusan">
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <h5 class="text-center fw-bold">TEKNIK KENDARAAN RINGAN OTOMOTIF</h5>
+        <p>
+          Jurusan TKR membekali siswa dengan kompetensi dalam perawatan, perbaikan, dan otomotif kendaraan ringan 
+          (mobil). Siswa belajar sistem mekanis, kelistrikan, suspensi, dan chasis, hingga sistem injeksi modern. 
+          Lulusan TKR siap bekerja di bengkel resmi, dealer otomotif, industri kendaraan, maupun membuka usaha mandiri 
+          di bidang perbengkelan.
+        </p>
+      </div>
+    </div>
+
+<!-- Baris 5 -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 order-md-2 text-center">
+        <div class="img-box border-danger">
+          <img src="/IMG/Untitled.jpg" class="img-fluid" alt="Gambar Jurusan">
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <h5 class="text-center fw-bold">TEKNIK KENDARAAN RINGAN OTOMOTIF</h5>
+        <p>
+          Jurusan TKR membekali siswa dengan kompetensi dalam perawatan, perbaikan, dan otomotif kendaraan ringan 
+          (mobil). Siswa belajar sistem mekanis, kelistrikan, suspensi, dan chasis, hingga sistem injeksi modern. 
+          Lulusan TKR siap bekerja di bengkel resmi, dealer otomotif, industri kendaraan, maupun membuka usaha mandiri 
+          di bidang perbengkelan.
+        </p>
+      </div>
+    </div>
+
+  </div>
     <script src="/bootstrap/js/bootstrap.bundle.js"></script>
   </body>
+  <style>
+  
+  .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #000000;
+    transition: border-bottom 0.2s;
+    margin-bottom: -3px;
+  }
+</style>
 </html>

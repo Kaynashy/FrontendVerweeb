@@ -4,63 +4,124 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
+   
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
   </head>
   <body>
 <!-- Navbar start -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class=" navbar-brand" href="#"><img src="/IMG/images.png" alt="Logo" width="35" height="35" class="d-inline-block me-2">IGASAR</a>
+    <a class="navbar-brand" href="#"><img src="/IMG/images.png" alt="Logo" width="35" height="35" class="d-inline-block me-2">IGASAR</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto fw-bold">
         <li class="nav-item ">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="/Home.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Profil</a>
+          <a class="nav-link" href="/profil.html">Profil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jurusan</a>
+          <a class="nav-link" href="/Jurusan.html">Jurusan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Galeri</a>
+          <a class="nav-link" href="/galeri.html">Galeri</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Event</a>
+          <a class="nav-link" href="/event.html">Event</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Prestasi</a>
+          <a class="nav-link" href="/prestasi.html">Prestasi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Eskul</a>
+          <a class="nav-link" href="/Eskul.html">Eskul</a>
         </li>
       </ul>
-       <form class="d-flex ms-5 " role="search" style="width: 300px;">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-     
-    </form>
+      <form class="d-flex ms-lg-5" role="search" style="width: 300px;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      </form>
     </div>
   </div>
 </nav>
 <!-- Navbar End -->
 
 
+
+
 <!-- Content -->
-<div class="card text-bg-dark">
-  <img src="/IMG/Book.jpg" class="card-img " alt="#" style="width: 200px;">
-  <div class="card-img-overlay text-center">
-    <h5 class="card-title">Program Keahlian</h5>
-    <p class="card-text">SMK IGASAR PINDAD BANDUNG</p>
+
+  <style>
+
+    body {
+      background: url(/IMG/Book.jpg) no-repeat center center/cover;
+      min-height: 100vh;
+     
+    }
+    .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #000000;
+    transition: border-bottom 0.2s;
+    margin-bottom: -3px;
+  }
+    .container{
+      margin-left: 12px;
+      margin-top: 20px;
+    }
+    .overlay {
+      background: rgba(255,255,255,0.7);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+       margin-left: -111;
+    }
+    .profile-card {
+      text-align: center;
+      
+    }
+    .profile-card img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+      object-fit: cover;
+    }
+    .profile-name {
+      background: #8B0000; 
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h4 class="text-white ms-5 fw-bold mb-4">Judul : Lorem ipsum dolor sit amet.</h4>
+    <div class="row justify-content-lg-between">
+      <!-- Sambutan -->
+      <div class="col-md-7">
+        <div class="overlay">
+          <h6 class="fw-bold">ISI SAMBUTAN:</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus in quam aliquam tincidunt. 
+            Cras sed consequat erat, vel fringilla ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+            Sed commodo est vel orci tempor, quis hendrerit erat ullamcorper. Nullam posuere, tortor nec fermentum efficitur, magna erat varius leo, 
+            quis finibus elit libero ac erat. Vestibulum consequat justo vel odio rutrum, sit amet convallis nibh tempor. 
+            Aliquam malesuada mattis erat, eget hendrerit dui cursus eget.
+          </p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="col-md-3 ">
+        <div class="profile-card shadow">
+          <img src="/IMG/images.jpg" alt="Foto Profil">
+          <div class="profile-name">Rosy Horimurty, S.Pd., M.M</div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
-<!-- ...existing code... -->
     <script src="/bootstrap/js/bootstrap.bundle.js"></script>
   </body>
 </html>
