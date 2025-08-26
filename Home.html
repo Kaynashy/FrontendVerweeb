@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel=”icon” href=”/IMG/images.png”>
     <title>SMK Igasar Pindad Bandung</title>
+   <script src="/chart.min.js"></script>
    
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
   </head>
@@ -40,7 +41,7 @@
           <a class="nav-link" href="/Eskul.html">Eskul</a>
         </li>
       </ul>
-      <form class="d-flex ms-lg-5" role="search" style="width: 300px;">
+      <form class="d-flex ms-lg-5" role="search" style="width: 2y00px;">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
       </form>
     </div>
@@ -56,9 +57,9 @@
   <style>
 
     body {
-      background: url(/IMG/Book.jpg) no-repeat center center/cover;
-      min-height: 100vh;
-     
+      background: url(/IMG/Book.jpg) no-repeat center center/cover ;
+      min-height: 10vh;
+      height: 400px;
     }
     .navbar-nav .nav-link:hover {
     border-bottom: 3px solid #000000;
@@ -95,6 +96,7 @@
   </style>
 </head>
 <body>
+  <div class="Body">
   <div class="container my-5 mx-5">
   <div class="row align-items-center">
     <div class="col-md-8">
@@ -108,15 +110,167 @@
       </div>
     </div>
     <div class="col-md-4">
-      <img src="https://via.placeholder.com/400x250" class="img-fluid rounded-3 shadow" alt="Foto Deskripsi">
+      <img src="https://via.placeholder.com/400x250" class="img-fluid rounded-3 shadow" alt="">
       <div class="profile-card shadow mt-3">
-        <img src="/IMG/images.jpg" alt="Foto Profil" style="width:100%; border-radius:10px;">
+        <img src="/IMG/Screenshot-142.png" alt="Foto Profil" style="width:100%; border-radius:10px;">
         <div class="profile-name">Rony Harimurty  S.Pd., M.M</div>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+<div class="pos" style="margin: 6rem;">
+<body>
+  <div class="container" style="margin-top: 150px;">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <canvas id="myChart" style="max-width:100%;"></canvas>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm text-center p-4 mb-3">
+        <i class="bi bi-bar-chart-fill fs-2 text-primary"></i>
+        <p class="mb-0 fw-bold">DATA PENGUNJUNG : 4.5K</p>
+       
+        
+      </div>
+      <div class="card shadow-sm text-center p-4">
+        <i class="bi bi-clipboard2-check-fill fs-2 text-info"></i>
+        <p class="mb-0 fw-bold">DATA DITANGGAPI : 3.5K</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Buku Tamu & Contact -->
+
+  <style>
+
+    .guest-book {
+      border: 1px solid #6e2c2c;
+      padding: 20px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+    .guest-book h5 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+    .guest-book label {
+      font-weight: 500;
+    }
+    .guest-book .btn {
+      font-size: 14px;
+      padding: 2px 15px;
+    }
+
+    /* Contact Medsos */
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      color: white;
+    }
+    .btn-instagram {
+      background: #fff;
+      color: #d62976;
+      font-weight: bold;
+      border: 1px solid #eee;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+    .btn-instagram:hover {
+      background: #f8f8f8;
+      color: #c32aa3;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<div class="container py-5">
+  <div class="row">
+    <!-- Buku Tamu -->
+    <div class="col-md-6 mb-4">
+      <div class="guest-book">
+        <h5>BUKU TAMU</h5>
+        <form>
+          <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Nama :</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">No Telp :</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Uraian :</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="text-end">
+            <button type="reset" class="btn btn-outline-secondary me-2">Batal</button>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Medsos -->
+    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+      <h6 class="fw-bold mb-4">Contact Medsos</h6>
+      <a href="#" class="btn btn-whatsapp mb-3 w-75 d-flex align-items-center justify-content-center">
+        <i class="bi bi-whatsapp me-2"></i> Tanya Lebih Lanjut
+      </a>
+      <a href="#" class="btn btn-instagram w-75 d-flex align-items-center justify-content-center">
+        <i class="bi bi-instagram me-2"></i> Follow IG Sekolah
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <script>
+const xValues = ["lorem", "lorem", "lorem", "lorem", "lorem"];
+const yValues = [55, 49, 44, 24, 15];
+const barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+</script>
+</div>
   </body>
 </html>
