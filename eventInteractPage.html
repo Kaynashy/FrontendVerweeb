@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kegiatan & Agenda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #3b3b3b;
+      color: #000;
+    }
+    .navbar-nav .nav-link:hover {
+      border-bottom: 3px solid #000000;
+      transition: border-bottom 0.2s;
+      margin-bottom: -3px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .agenda-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #b2b0b0;
+    }
+    .custom-card {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 3px solid red;
+      transition: transform 0.2s;
+    }
+    .custom-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+    .custom-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/IMG/images.png" alt="Logo" width="35" height="35" class="d-inline-block me-2">IGASAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto fw-bold">
+          <li class="nav-item"><a class="nav-link" href="/Home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Jurusan.html">Jurusan</a></li>
+          <li class="nav-item"><a class="nav-link" href="/galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="/event.html">Event</a></li>
+          <li class="nav-item"><a class="nav-link" href="/prestasi.html">Prestasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Eskul.html">Eskul</a></li>
+        </ul>
+        <form class="d-flex ms-lg-5 mt-2 mt-lg-0" role="search" style="width: 200px;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="card text-bg-dark">
+    <img src="/IMG/Book.jpg" class="card-img img-fluid w-100 opacity-50" alt="#" style="height: 150px; object-fit: cover;">
+    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center">
+      <h4 class="page-title">judul : Kunjungan ke Gamelab Yogyakarta</h4>
+      <p class="card-text">09-07-2024 | Gamelab Yogyakarta</p>
+    </div>
+  </div>
+
+
+  <div class="container mt-4 bg-white p-4 rounded">
+    <h3 class="section-title">Judul Deskripsi</h3>
+    <p class="text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed risus in quam aliquam tincidunt. 
+      Curabitur sed posuere lacus. Pellentesque malesuada bibendum. Vestibulum accumsan velit sed vehicula.
+    </p>
+
+
+    <h4 class="section-title">Tujuan Kegiatan</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Ut facilisis tortor vitae odio elementum, sit amet ultricies.</li>
+          <li>Suspendisse vel ante viverra rhoncus nunc eget, sagittis eros.</li>
+          <li>Pellentesque habitant morbi tristique senectus et netus.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+          <li>Proin vel nisl et mauris finibus malesuada.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 class="section-title">Rundown Agenda</h4>
+    <div class="agenda-box mb-5">
+      <p><b>Hari 1 (Senin, 12 Juni 2025)</b></p>
+      <ul>
+        <li>07:00 – 08:00 : Persiapan dan keberangkatan dari sekolah</li>
+        <li>08:00 – 09:30 : Perjalanan menuju lokasi industri</li>
+        <li>09:30 – 12:00 : Istirahat & makan siang</li>
+        <li>12:00 – 13:00 : Penyambutan & pengenalan perusahaan</li>
+        <li>13:00 – 16:00 : Check in penginapan</li>
+      </ul>
+      <p><b>Hari 2 (Selasa, 13 Juni 2025)</b></p>
+      <ul>
+        <li>08:00 – 09:00 : Observasi proses produksi</li>
+        <li>09:00 – 12:00 : Workshop dengan pihak industri</li>
+        <li>12:00 – 13:00 : Istirahat & makan siang</li>
+        <li>13:00 – 15:00 : Kunjungan ke laboratorium/divisi khusus</li>
+        <li>15:00 – 16:00 : Sharing session</li>
+      </ul>
+      <p><b>Hari 3 (Rabu, 14 Juni 2025)</b></p>
+      <ul>
+        <li>08:00 – 10:00 : Presentasi hasil kunjungan oleh siswa</li>
+        <li>10:00 – 11:30 : Evaluasi & tanya jawab</li>
+        <li>11:30 – 12:00 : Istirahat & makan siang</li>
+        <li>12:00 – 13:00 : Penutupan & dokumentasi</li>
+        <li>13:00 – 15:00 : Perjalanan pulang ke sekolah</li>
+      </ul>
+    </div>
+
+   
+    <h4 class="section-title">Dokumentasi Kegiatan</h4>
+    <div class="row text-center">
+      <div class="col-md-3 mb-3">
+        <div class="custom-card">
+          <img src="IMG/Untitled.jpg" class="img-fluid" alt="Dokumentasi 1">
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="custom-card">
+          <img src="IMG/Untitled.jpg" class="img-fluid" alt="Dokumentasi 2">
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="custom-card">
+          <img src="IMG/Untitled.jpg" class="img-fluid" alt="Dokumentasi 3">
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="custom-card">
+          <img src="IMG/Untitled.jpg" class="img-fluid" alt="Dokumentasi 4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
