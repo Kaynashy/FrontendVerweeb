@@ -1,0 +1,41 @@
+.custom-card {
+      border: 2px solid #f1b0b7; /* warna border pink lembut */
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .custom-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .custom-card img {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      display: block;
+    }
+    .custom-card h5 {
+      font-weight: bold;
+    }
+     .custom-card {
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        overflow: hidden;
+      }
+      .custom-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-title {
+        color: #b30000;
+        font-weight: bold;
+      }
+      .btn-custom {
+        background-color: #b30000;
+        color: white;
+        border-radius: 25px;
+        font-weight: bold;
+        padding: 6px 16px;
+      }
+      .btn-custom:hover {
+        background-color: #8b0000;
+        color: #fff;
+      }
