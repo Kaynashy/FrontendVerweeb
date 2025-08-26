@@ -45,7 +45,7 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
       </form>
     </div>
-  </div>
+  </div>l
 </nav>
 <style>
 .navbar-nav .nav-link:hover {
@@ -81,19 +81,29 @@
         object-fit: cover;
       }
       .card-title {
-        color: #b30000;
+        color: #fbfafa;
         font-weight: bold;
       }
       .btn-custom {
-        background-color: #b30000;
+        background-color: #b3000b ;
         color: white;
         border-radius: 25px;
         font-weight: bold;
         padding: 6px 16px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      .card-body {
+        text-align: center;
       }
       .btn-custom:hover {
-        background-color: #8b0000;
-        color: #fff;
+        background-color: #036d03;
+        color:  white;
       }
     </style>
   </head>
@@ -101,7 +111,7 @@
     <div class="container mt-5">
       <div class="row g-4">
         
-        <!-- Card 1 (Yang cuma bisa di interact sementara) -->
+        <!-- Card 1 (Yang cuma bisa di interact semen) -->
         <div class="col-md-4">
           <div class="card custom-card">
             <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="Foto Kegiatan">
@@ -305,9 +315,9 @@
     </div>
   </div>
 
-  <style>
+ <!-- Card 12 <style>
     .custom-card {
-    
+  
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       overflow: hidden;
       transition: transform 0.2s ease-in-out;
@@ -327,7 +337,7 @@
     .custom-card:hover {
       transform: translateY(-5px);
     }
-  </style>
+  </style> -->
 </body>
 </html>
 
